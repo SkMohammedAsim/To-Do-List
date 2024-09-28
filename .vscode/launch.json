@@ -1,0 +1,19 @@
+{
+    "version": "0.2.0",
+    "configurations": [
+        {
+            "type": "chrome",
+            "request": "launch",
+            "name": "Launch Chrome against localhost",
+            "url": "http://localhost:5500",  // Ensure this matches your local server URL
+            "webRoot": "${workspaceFolder}",
+            "sourceMaps": true,
+            "trace": true,
+            "runtimeArgs": [
+                "--remote-debugging-port=9222"
+            ],
+            "skipFiles": ["<node_internals>/**"],
+            "smartStep": true
+        }
+    ]
+}
