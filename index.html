@@ -1,0 +1,42 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="style.css">
+    <title>To-Do List Application</title>
+</head>
+<body>
+    <div id="main-menu">
+        <h1>To-Do List Application</h1>
+        <div id="auth-section">
+            <input type="text" id="username" placeholder="Username" aria-label="Username" required>
+            <input type="password" id="password" placeholder="Password" aria-label="Password" required>
+            <button id="register-btn">Create Account</button>
+            <button id="login-btn">Login</button>
+        </div>
+    </div>
+
+    <div id="task-section" class="hidden">
+        <h2>Task Management</h2>
+        <input type="text" id="new-task" placeholder="New Task" aria-label="New Task" required>
+        <select id="category" aria-label="Category">
+            <option value="">Select Category</option>
+            <option value="Work">Work</option>
+            <option value="Personal">Personal</option>
+            <option value="Study">Study</option>
+        </select>
+        <input type="date" id="due-date" aria-label="Due Date" required>
+        <button id="add-task-btn">Add Task</button>
+        <button id="logout-btn" class="logout-btn">Logout</button>
+        
+        <h3>Uncompleted Tasks</h3>
+        <ul id="task-list" aria-label="Uncompleted Tasks"></ul>
+        
+        <h3>Completed Tasks</h3>
+        <ul id="completed-task-list" aria-label="Completed Tasks"></ul>
+    </div>
+
+    <script src="script.js"></script>
+</body>
+</html>
